@@ -105,9 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const actualIndex = (currentPage - 1) * itemsPerPage + index;
 
         const benefitsArr = (nutrient.whatitdoes || "").split('.').map(b => b.replace(/\s+/g, ' ').trim()).filter(b => b.length > 3);
-        const benefitsPreview = benefitsArr.slice(0, 1).map((b, i) => `
-            <div class="flex gap-2 text-slate-600 text-xs text-left">
-                <span class="font-bold text-indigo-400">1.</span>
+        const benefitsPreview = benefitsArr.slice(0, 3).map((b, i) => `
+            <div class="flex gap-2 text-slate-600 text-xs text-left mb-2">
+                <span class="font-bold text-indigo-400">${i + 1}.</span>
                 <span class="line-clamp-2 leading-relaxed">${b}</span>
             </div>
         `).join('');
