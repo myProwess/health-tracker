@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Health | Premium Vitamin & Mineral Guide (English & Tamil)</title>
+    <meta name="description" content="Access a comprehensive guide to essential vitamins and minerals. Learn about health benefits, deficiency symptoms, and top food sources in both English and Tamil. Optimized for health awareness and nutrition planning.">
+    <meta name="keywords" content="Vitamins Guide, Mineral Chart Tamil, Nutritional Benefits, Deficiency Symptoms, Healthy Food Sources, ICMR Guidelines, Vitamin A to Zinc, Tamil Health Nutrition, Health Awareness App">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Dr Health | Premium Vitamin & Mineral Guide",
+      "description": "An interactive guide to vitamins and minerals with Tamil translation, detailed benefits, and food sources.",
+      "audience": "General Public",
+      "specialty": "Nutrition",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Dr Health"
+      },
+      "inLanguage": ["en", "ta"]
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 min-h-screen relative overflow-x-hidden">
+    <!-- Animated Background Blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+
+    <!-- Header -->
+    <header class="glass-effect sticky top-0 z-50 border-b border-white/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="bg-indigo-600 p-2 rounded-lg shadow-indigo-200 shadow-lg">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.415-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h1 class="text-2xl font-black text-slate-900 tracking-tight italic">Dr <span
+                            class="text-indigo-600 not-italic">Health</span></h1>
+                    <span class="sr-only">Comprehensive Nutritional Guide</span>
+                </div>
+
+                <div class="flex flex-1 max-w-xl items-center gap-4 relative group">
+                    <div class="relative flex-1">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-slate-400 group-focus-within:text-indigo-500 transition-colors"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                        <input type="text" id="searchInput" placeholder="Search nutrients..."
+                            class="block w-full pl-10 pr-3 py-2.5 bg-white border border-slate-200 rounded-xl leading-5 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all shadow-sm sm:text-sm">
+                    </div>
+
+                    <!-- Language Toggle -->
+                    <div
+                        class="flex-shrink-0 flex items-center gap-3 px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm">
+                        <span class="text-xs font-black text-slate-500 uppercase tracking-widest">Tamil Translate</span>
+                        <button id="langToggle" class="flex items-center gap-2 group active">
+                            <div class="w-12 h-6 bg-slate-200 rounded-full relative transition-colors group-[.active]:bg-indigo-600"
+                                id="toggleTrack">
+                                <div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all group-[.active]:left-7"
+                                    id="toggleKnob"></div>
+                            </div>
+                            <span class="text-sm font-black text-slate-700 min-w-[30px]" id="langStatus">ON</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="sr-only">
+                <ul>
+                    <li><a href="#nutrientGrid">Skip to Nutrients Grid</a></li>
+                    <li><a href="#langToggle">Switch Language</a></li>
+                </ul>
+            </nav>
+
+            <!-- Filters -->
+            <div class="mt-6 flex flex-wrap gap-2">
+                <button data-filter="All"
+                    class="filter-btn active px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-sm border border-slate-200 bg-white text-slate-700 hover:bg-indigo-50 hover:text-indigo-600">
+                    All
+                </button>
+                <button data-filter="Vitamin"
+                    class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-sm border border-slate-200 bg-white text-slate-700 hover:bg-orange-50 hover:text-orange-600">
+                    Vitamins
+                </button>
+                <button data-filter="Mineral"
+                    class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-sm border border-slate-200 bg-white text-slate-700 hover:bg-blue-50 hover:text-blue-600">
+                    Minerals
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h2 class="sr-only">Nutrient Database</h2>
+        <div id="loading" class="flex flex-col items-center justify-center py-20">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mb-4"></div>
+            <p class="text-slate-500 font-medium">Loading essential nutrients...</p>
+        </div>
+
+        <div id="nutrientGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 hidden">
+            <!-- Cards injected here -->
+        </div>
+
+        <!-- Pagination -->
+        <div id="paginationContainer" class="mt-12 flex items-center justify-center gap-2 hidden">
+            <!-- Pagination buttons injected here -->
+        </div>
+
+        <div id="noResults" class="hidden flex flex-col items-center justify-center py-20 text-center">
+            <div class="bg-slate-100 p-6 rounded-full mb-4">
+                <svg class="w-12 h-12 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9.172 9.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">No nutrients found</h3>
+            <p class="text-slate-500 mt-1">Try adjusting your search or filters.</p>
+        </div>
+    </main>
+
+    <!-- Modal Dialog -->
+    <div id="nutrientModal"
+        class="fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6 bg-slate-900/10 backdrop-blur-sm">
+        <div
+            class="luminous-glass w-full max-w-4xl max-h-[90vh] rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col animate-fade-in">
+            <!-- Modal Header -->
+            <div id="modalHeader"
+                class="bg-gradient-to-r from-violet-600 to-indigo-600 p-8 flex items-center justify-between text-white border-b border-white/10">
+                <div>
+                    <span id="modalType"
+                        class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-widest bg-white/20 mb-1 inline-block">TYPE</span>
+                    <h2 id="modalTitle" class="text-2xl font-bold">Nutrient Title</h2>
+                </div>
+                <button id="closeModal" class="p-2 hover:bg-white/10 rounded-full transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Body (Dynamic Sections) -->
+            <div class="flex-grow overflow-y-auto p-6 sm:p-10">
+                <div id="modalBodyGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
+                    <!-- Section 1: Benefits -->
+                    <div id="sectionBenefits">
+                        <h4
+                            class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-6 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0" />
+                            </svg>
+                            Key Benefits
+                        </h4>
+                        <div id="modalBenefits" class="space-y-4">
+                            <!-- Numbered benefits -->
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Food Sources -->
+                    <div id="sectionSources">
+                        <h4
+                            class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-6 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.703 2.703 0 01-3 0 2.703 2.703 0 01-3 0 2.703 2.703 0 01-3 0 2.704 2.704 0 01-1.5-.454" />
+                            </svg>
+                            Rich Food Sources
+                        </h4>
+                        <div id="modalSources" class="grid grid-cols-1 gap-3">
+                            <!-- Food sources list -->
+                        </div>
+                    </div>
+
+                    <!-- Section 3: Deficiency Symptoms -->
+                    <div id="sectionSymptoms">
+                        <h4
+                            class="text-xs font-bold text-rose-600 uppercase tracking-widest mb-6 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                            Deficiency Symptoms
+                        </h4>
+                        <div id="modalSymptoms" class="grid grid-cols-1 gap-3 animate-fade-in">
+                            <!-- Deficiency symptoms injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="p-6 border-t border-indigo-100 bg-white/50 flex justify-end">
+                <button id="closeModalBtn"
+                    class="px-8 py-2.5 bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-bold rounded-xl hover:brightness-110 transition-all shadow-lg shadow-indigo-200">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-slate-200 text-center">
+        <p class="text-slate-900 font-bold mb-2">Please refer Indian Council of Medical Research (ICMR) guidelines for
+            further clarifications.</p>
+        <p class="text-slate-400 text-sm">© 2024 Dr Health. For informational purposes only.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

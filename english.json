@@ -1,0 +1,198 @@
+[
+    {
+        "Nutrient": "Vitamin A",
+        "whatitdoes": "Essential for maintaining healthy vision (especially in low light), immune function, and cellular communication. Supports the maintenance of healthy skin and mucous membranes, and is required for normal red blood cell formation and fetal development.",
+        "foodsources": "Cantaloupe, Carrots, Cheese, Cod liver oil, Dairy products, Dark green leafy vegetables, darkly coloured orange or green vegetables (carrots, sweet potatoes and pumpkin), eggs, Fortified cereals, fortified cereals, Green leafy vegetables (e.g., spinach and broccoli), liver, Maambazham (Mango), Milk, Orange-coloured fruits and vegetables (e.g., carrot, sweet potato, butternut squash, cantaloupe melon and papaya), orange fruits such as cantaloupe, apricots, peaches, papayas and mangos, Pappali (Papaya), Pumpkin, Red peppers, Sweet potatoes, Vendhaya Keerai (Fenugreek leaves)",
+        "type": "Vitamin",
+        "deficiency_symptoms": "and Bitot's spots (white patches on the conjunctiva), dry and rough skin, dry eyes (xerophthalmia), frequent respiratory or gastrointestinal infections, Night blindness (Maalai kan noi)"
+    },
+    {
+        "Nutrient": "Vitamin B1 (Thiamin)",
+        "whatitdoes": "Essential for carbohydrate metabolism and extracting energy from nutrients. Plays a vital role in synthesizing neurotransmitters, maintaining healthy nerve cells, and supporting cardiac muscle function.",
+        "foodsources": "Beans and peas, cereals, dried beans, Enriched grain products (e.g., bread, cereal, pasta, rice), fish, fortified breads, Green peas, Kothumai maavu (Whole wheat flour), Macadamia nuts, meat, Nuts, pasta, peas, Pork, Seeds, soy foods, Sunflower seeds, Verkadalai (Peanuts), Whole grains, whole grains like wheat germ",
+        "type": "Vitamin",
+        "deficiency_symptoms": "and in severe cases, Wernicke-Korsakoff syndrome (memory/cognitive issues), Beriberi (resulting in severe muscle weakness and nerve damage), loss of appetite, unexplained fatigue"
+    },
+    {
+        "Nutrient": "Vitamin B2 (Riboflavin)",
+        "whatitdoes": "Acts as a key component of coenzymes involved in energy metabolism, cellular function, and the breakdown of fats and drugs. Supports healthy skin, vision, and the continuous production of red blood cells.",
+        "foodsources": "Almonds, asparagus, Badam (Almonds), broccoli, dairy products, eggs, Enriched grain products (e.g., bread, cereal, pasta, rice), fortified cereals, green leafy vegetables, legumes (like peas and lentils), Meat, Meats, Milk, Mushrooms, nuts, Offal, Oily fish (e.g., mackerel and sardines), Paal (Milk), Poultry, Quinoa, Seafood (e.g., oysters), Spinach",
+        "type": "Vitamin",
+        "deficiency_symptoms": "and bloodshot or light-sensitive eyes, cracked lips or corners of the mouth (cheilosis), frequent mouth ulcers (commonly known as 'vaai pun'), sore throat, swollen/red tongue"
+    },
+    {
+        "Nutrient": "Vitamin B3 (Niacin)",
+        "whatitdoes": "Facilitates over 400 enzyme reactions, primarily converting food into cellular energy. Essential for cholesterol and fat synthesis, maintaining healthy skin, DNA repair, and central nervous system signaling.",
+        "foodsources": "Beans, Beef, Bread, Brown rice, Enriched grain products (e.g., bread, cereal, pasta, rice), fish, fortified hot and cold cereals, Nuts, Pattani (Green peas), peanuts, Pork, poultry, Red meat, Seafood, Sesame seeds, Shellfish, Verkadalai (Peanuts), Whole grains, Wholegrains (e.g., brown rice, wholewheat pasta and quinoa)",
+        "type": "Vitamin",
+        "deficiency_symptoms": "and digestive disturbances, fatigue, Pellagra (characterized by the '3 Ds': Dermatitis, Diarrhea, and Dementia), thick/pigmented rash on skin exposed to sunlight"
+    },
+    {
+        "Nutrient": "Vitamin B5 (Pantothenic Acid)",
+        "whatitdoes": "Vital for the synthesis of Coenzyme A (CoA), which is essential for converting food into energy. Supports the production of red blood cells, steroid hormones, and the synthesis of fatty acids.",
+        "foodsources": "Avocados, Beans and peas, Beef, Broccoli, Eggs, Milk, Mushrooms, Poultry, Sakkaravalli Kizhangu (Sweet potato), Seafood, Sunflower seeds, Sweet potatoes, Thayir (Curd), Whole grains, Yogurt",
+        "type": "Vitamin",
+        "deficiency_symptoms": "and sleep disturbances, extreme fatigue, Extremely rare, but can manifest as numbness and burning sensation in the feet ('burning feet syndrome'), irritability"
+    },
+    {
+        "Nutrient": "Vitamin B6",
+        "whatitdoes": "Essential for the metabolism of proteins, carbohydrates, and lipids. Crucial for brain development, the synthesis of neurotransmitters (like serotonin and dopamine), immune response regulation, and hemoglobin production.",
+        "foodsources": "Avocado, Banana, bananas, beans, Chickpeas, Egg yolk, eggs, fish, fortified cereals, Fruits (other than citrus), Green pepper, Kondaikadalai (Chickpeas), nuts, Pistachios, potatoes, poultry, red meat, Salmon, seeds, Sesame seeds, Soya beans, spinach, Tuna, Vazhaipazham (Bananas), Yeast extract",
+        "type": "Vitamin",
+        "deficiency_symptoms": "and a weakened immune system, confusion, cracks at the corners of the mouth, depression, itchy and scaly skin rashes, Microcytic anemia, swollen tongue"
+    },
+    {
+        "Nutrient": "Vitamin B7 (Biotin)",
+        "whatitdoes": "Acts as a coenzyme for protein, carbohydrate, and fat metabolism. Essential for cellular energy storage, gene regulation, and maintaining the keratin infrastructure of healthy hair, skin, and nails.",
+        "foodsources": "Almonds, Avocados, Cauliflower, Eggs, Fruits (e.g., raspberries), Kambu (Pearl millet), Liver, Paruppu (Lentils), Pork, Salmon, Spinach, Sweet potatoes, Verkadalai (Peanuts), Whole grains",
+        "type": "Vitamin",
+        "deficiency_symptoms": "and chronic fatigue, brittle nails, scaly red rash around the eyes, nose, and mouth, Unexplained hair thinning/hair loss (a very common concern)"
+    },
+    {
+        "Nutrient": "Vitamin B9 (Folate)",
+        "whatitdoes": "Vital for DNA synthesis, amino acid metabolism, and red blood cell formation. Crucial during early pregnancy to ensure normal fetal neural tube development and prevent birth defects. Supports immune function and reduces fatigue.",
+        "foodsources": "asparagus, Beetroot, Berries, citrus fruits, Dried beans, Edamame, Enriched grain products (e.g., bread, cereal, pasta, rice), fortified or enriches bread, green leafy vegetables, Kadugu Keerai (Mustard greens), legumes, Malted wheat and brown bread, noodles and cereals, Offal, Orange juice, oranges, Paasi paruppu (Moong dal), poultry, Vendakkai (Okra)",
+        "type": "Vitamin",
+        "deficiency_symptoms": "and severe neural tube defects in newborns if deficient during pregnancy, Megaloblastic anemia, mouth sores, poor growth, profound fatigue, weakness"
+    },
+    {
+        "Nutrient": "Vitamin B12",
+        "whatitdoes": "Vital for maintaining the central nervous system, particularly in the formation of the protective myelin sheath around nerves. Required for DNA synthesis, red blood cell formation (preventing anemia), and reducing cellular fatigue.",
+        "foodsources": "breakfast cereals, cheese, Dairy products, eggs, fish, Fortified cereals, Fortified yeast extract, Fromage frais, Meats, milk, Nutritional yeast (fortified), Paneer, poultry, red meat, Sardines, Seafood (e.g., clams, trout, salmon, haddock, tuna), Thayir (Curd)",
+        "type": "Vitamin",
+        "deficiency_symptoms": "and pernicious anemia, extreme fatigue, Highly prevalent among Indian vegetarians. Symptoms include extreme fatigue, lethargy, memory loss, mouth ulcers, 'pins and needles' (tingling/numbness) in hands and feet"
+    },
+    {
+        "Nutrient": "Vitamin C",
+        "whatitdoes": "A potent antioxidant that protects cells from oxidative stress. Required for the biosynthesis of collagen (essential for wound healing and connective tissue structure), specific neurotransmitters, and L-carnitine. Enhances the absorption of non-heme iron.",
+        "foodsources": "broccoli, Brussels sprouts, Cantaloupe, Citrus fruits and juices (e.g., oranges and grapefruit), Elumichai (Lemon), Fruit (especially citrus fruits, blackcurrants, strawberries, papaya and kiwi), Green vegetables, Guava, juices made from guava, grapefruit and oranges, kiwi, Kiwifruit, Lychee, Nellikai (Indian gooseberry), Pachai milagai (Green chilies), Peppers, red and green capsicums, red berries, spinach, Strawberries, Tomatoes and tomato juice, tomatoes",
+        "type": "Vitamin",
+        "deficiency_symptoms": "and in severe cases, scurvy, Bleeding/swollen gums, delayed wound healing, dry or splitting hair, easy bruising, frequent infections"
+    },
+    {
+        "Nutrient": "Vitamin D",
+        "whatitdoes": "Regulates calcium and phosphorus homeostasis, directly driving intestinal calcium absorption to maintain skeletal integrity and bone growth. Modulates neuromuscular function, reduces systemic inflammation, and regulates immune system genes.",
+        "foodsources": "egg yolks, Fat spreads, Fish (e.g., herring, mackerel, salmon, trout, and tuna), Fish liver oil, fish oils, Fortified cereals, Fortified dairy products, foods like milk, Fortified Indian milk/oil brands, Fortified margarine, Fortified orange juice, Fortified soy beverages (soymilk), Oily fish, sunlight on your skin, UV-exposed mushrooms",
+        "type": "Vitamin",
+        "deficiency_symptoms": "and Rickets (soft/deformed bones) in children, bone/joint pain, Causes bone/joint pain, chronic fatigue, muscle weakness, Osteomalacia/Osteoporosis in adults, Widespread in India despite sunlight"
+    },
+    {
+        "Nutrient": "Vitamin E",
+        "whatitdoes": "Acts primarily as a fat-soluble antioxidant, protecting cell membranes (especially red blood cells) from reactive oxygen species. Promotes vasodilation, inhibits platelet aggregation, and supports systemic immune function.",
+        "foodsources": "Abalone, Almonds, Avocados, Badam (Almonds), Fortified cereals and juices, Green vegetables (e.g., spinach and broccoli), green leafy vegetables, Hazelnuts, Kadugu ennai (Mustard oil), nuts, Nuts and seeds, Olives, Peanuts and peanut butter, Sunflower seeds, Vegetable and seed oils (e.g., olive, rapeseed, sunflower, peanut oils), Vegetable oils, vegetable oils, wheat germ, whole grains",
+        "type": "Vitamin",
+        "deficiency_symptoms": "and a noticeable decline in immune system function, loss of muscle coordination (ataxia), Muscle weakness, numbness or tingling, vision deterioration"
+    },
+    {
+        "Nutrient": "Vitamin K",
+        "whatitdoes": "Essential for the synthesis of specific proteins required for the blood coagulation cascade (clotting). Critical for bone metabolism by modifying osteocalcin to allow it to bind calcium to the bone matrix.",
+        "foodsources": "Edamame, Green vegetables (e.g., broccoli, kale, spinach, turnip greens, collards, Swiss chard, mustard greens), Green vegetables (including leafy greens, broccoli, green beans and peas), Kadugu Keerai (Mustard greens), Natto (fermented soybeans), Pasalai Keerai (Spinach), some oils (e.g., rapeseed, olive and soya oil), Vendhaya Keerai (Fenugreek leaves)",
+        "type": "Vitamin",
+        "deficiency_symptoms": "and increased risk of bone fractures, easy bruising, Excessive bleeding from minor wounds/cuts, heavy menstrual bleeding"
+    },
+    {
+        "Nutrient": "Calcium",
+        "whatitdoes": "Primary structural component of bones and teeth; crucial for achieving peak bone mass and preventing osteoporosis. Facilitates muscle contraction, nerve impulse transmission, blood vessel constriction/relaxation, and the blood coagulation cascade.",
+        "foodsources": "Almond, rice, coconut, and hemp milks, Breads (white, brown and wholegrain), Broccoli, Canned seafood with bones (e.g., salmon and sardines), Chia seeds, Dairy products (yoghurt, cheese, cottage cheese), Dark green, leafy vegetables, Foods fortified with calcium, Fortified cereals and juices, Fortified soy beverages (soymilk), Fromage frais, Green vegetables (e.g., spinach, kale, broccoli, turnip greens), Kezhvaragu/Ragi (Finger millet), Milk, Murungai Keerai (Drumstick leaves), Paneer (Indian cottage cheese), Sesame seeds, Soy foods, Thandu Keerai/Mulai Keerai (Amaranth leaves), Tofu (made with calcium sulfate)",
+        "type": "Mineral",
+        "deficiency_symptoms": "and over time, Osteopenia and Osteoporosis, dental problems, fatigue, Muscle cramps/spasms, tingling in fingers and toes, weak/brittle nails"
+    },
+    {
+        "Nutrient": "Chloride",
+        "whatitdoes": "Maintains extracellular fluid balance and osmotic pressure. Essential for acid-base balance, central nervous system function, and the production of gastric acid (hydrochloric acid) for optimal digestion.",
+        "foodsources": "Celery, Indhu uppu (Rock salt), Karuppu uppu (Black salt), Lettuce, Olives, Processed meats, Rye, Salt substitutes, Seaweeds (e.g., dulse and kelp), Table salt and sea salt, Tomatoes",
+        "type": "Mineral",
+        "deficiency_symptoms": "and difficulty breathing, fatigue, fluid loss, muscle weakness, Symptoms include fluid loss, Usually rare unless caused by severe dehydration (sweating, vomiting, or diarrhea)"
+    },
+    {
+        "Nutrient": "Chromium",
+        "whatitdoes": "Enhances the action of insulin to regulate blood glucose levels. Plays a secondary role in the metabolism of carbohydrates, proteins, and lipids.",
+        "foodsources": "Brewer's yeast, Broccoli, Fruits (e.g., apple and banana), Grape and orange juice, Green beans, Kambu (Pearl millet), Meats, Milagu (Black pepper), Spices (e.g., garlic and basil), Turkey, Whole grains",
+        "type": "Mineral",
+        "deficiency_symptoms": "and fatigue, Impaired glucose tolerance, poor blood sugar control (mimicking diabetes symptoms), unexplained weight loss"
+    },
+    {
+        "Nutrient": "Copper",
+        "whatitdoes": "Catalyzes energy production and iron metabolism. Crucial for cross-linking collagen and elastin in connective tissues, nervous system function, and melanin synthesis for skin and hair pigmentation. Acts as an antioxidant.",
+        "foodsources": "Chocolate and cocoa, Crustaceans and shellfish, Kondaikadalai (Chickpeas), Lentils, Mundhiri (Cashews), Nuts and seeds, Organ meats (e.g., liver), Puli (Tamarind), Shiitake mushrooms, Spirulina, Whole grains",
+        "type": "Mineral",
+        "deficiency_symptoms": "and frequent sickness, Anemia (that doesn't respond to iron supplements), fatigue, pale skin, premature graying of hair, weak bones"
+    },
+    {
+        "Nutrient": "Fluoride",
+        "whatitdoes": "Incorporates into tooth enamel to reduce the risk of dental caries (tooth decay). Supports overall skeletal bone density and structural stability.",
+        "foodsources": "Brewed black tea, Canned fish with bones, Indian black tea (Chai), Tap water, tea, toothpaste",
+        "type": "Mineral",
+        "deficiency_symptoms": "and potentially weaker bone structure over time, Increased susceptibility to dental cavities (tooth decay)"
+    },
+    {
+        "Nutrient": "Iodine",
+        "whatitdoes": "Essential component of thyroid hormones (T3 and T4) which regulate basal metabolic rate. Critical for cellular growth, reproductive health, and fetal brain and cognitive development during pregnancy.",
+        "foodsources": "Breads and cereals, Cheese, Cod, Dairy products, Eggs, Eral (Prawns), Fish, Fortified dairy alternative drinks, Iodized salt, Milk, Potatoes, Prunes, Seafood, Seaweed, Shellfish, Thayir (Curd), Turkey, Yogurt",
+        "type": "Mineral",
+        "deficiency_symptoms": "and learning/developmental difficulties in children, dry skin, Goiter (visible swelling of the neck/thyroid gland), severe fatigue, unexpected weight gain"
+    },
+    {
+        "Nutrient": "Iron",
+        "whatitdoes": "Core component of hemoglobin (transporting oxygen in blood) and myoglobin (storing oxygen in muscles). Essential for energy production, neurological development, cellular immune responses, and wound healing.",
+        "foodsources": "Amaranth, Aval (Flattened rice), beans, Dark chocolate, Dark green vegetables, Dried fruit, fish, Fortified cereals and breads, green leafy vegetables, lentils, Offal, pork, poultry, Prunes and prune juice, Pulses, Quinoa, raisins, Rajma (Kidney beans), Red meat, Seeds, shellfish, soy foods, Tofu, Vellam (Jaggery), Whole grain, enriched, and fortified cereals and breads, Wholemeal bread",
+        "type": "Mineral",
+        "deficiency_symptoms": "and Pica (craving non-food items like clay or ice), cold hands and feet, dizziness, Iron deficiency anemia (extremely prevalent in women/children). Symptoms include extreme fatigue, pale skin, shortness of breath"
+    },
+    {
+        "Nutrient": "Magnesium",
+        "whatitdoes": "Cofactor in over 300 enzyme systems regulating protein synthesis, muscle and nerve function, blood glucose control, and blood pressure. Required for energy (ATP) production, DNA/RNA synthesis, and maintaining stable heart rhythms and bone density.",
+        "foodsources": "Almonds, avocados, bananas, beans, Black beans, broccoli, Brown rice, Cashews, chocolate, Dairy products, green leafy vegetables, Kezhvaragu (Finger millet), kiwi, nuts, Paasi paruppu (Moong dal), Poosani vidhai (Pumpkin seeds), potatoes, prawns, Pumpkin seeds, Quinoa, seeds, Wheat bran, whole grain breads, Whole grains, Wholegrain and seeded breads, Wholegrain breakfast cereals",
+        "type": "Mineral",
+        "deficiency_symptoms": "and increased risk of osteoporosis, high blood pressure, irregular heartbeat, mental fatigue or apathy, Muscle twitches and cramps"
+    },
+    {
+        "Nutrient": "Manganese",
+        "whatitdoes": "Essential component of antioxidant enzymes (e.g., superoxide dismutase). Facilitates the metabolism of amino acids, cholesterol, and carbohydrates. Required for bone/cartilage formation and blood clotting (in conjunction with Vitamin K).",
+        "foodsources": "Beans, Elakkai (Cardamom), Hazelnuts, Kothumai Chapati (Whole wheat Chapati), Krambu (Cloves), Nuts, Pecans, Pineapple, Spinach, Sweet potato, Teff, Whole grains",
+        "type": "Mineral",
+        "deficiency_symptoms": "and impaired glucose tolerance, Poor bone growth/skeletal defects, slow wound healing"
+    },
+    {
+        "Nutrient": "Molybdenum",
+        "whatitdoes": "Acts as a crucial cofactor for enzymes that break down toxic sulfites, process cellular waste, and metabolize specific amino acids and drugs.",
+        "foodsources": "Beans and peas, Karamani (Black-eyed peas), Lentils, Nuts, Oats, Thuvaram paruppu (Pigeon peas), Whole grains",
+        "type": "Mineral",
+        "deficiency_symptoms": "and potential neurological issues, Can cause rapid heart rate, Extremely rare in healthy individuals, headache, mental confusion"
+    },
+    {
+        "Nutrient": "Phosphorus",
+        "whatitdoes": "Structural component of bones, teeth, DNA, RNA, and cell membranes. Plays a central role in energy storage and production (ATP synthesis), acid-base balance, and enzyme/hormone activation.",
+        "foodsources": "Beans and peas, Dairy foods, Eggs, fish, Kadalai paruppu (Bengal gram), meat, Nuts and seeds, Paneer, Pork, Poultry, Seafood, Sunflower seeds, Whole grain, enriched, and fortified cereals and breads, Wholegrains (such as brown rice and wholewheat pasta), Yogurt",
+        "type": "Mineral",
+        "deficiency_symptoms": "and numbness/tingling, Bone pain, chronic fatigue, joint stiffness, loss of appetite, overall weakness"
+    },
+    {
+        "Nutrient": "Potassium",
+        "whatitdoes": "Primary intracellular electrolyte that maintains fluid volume and osmotic balance. Critical for nerve signal transmission, muscle contraction (preventing cramps), regulating heartbeat, and maintaining healthy blood pressure.",
+        "foodsources": "Acorn squash, Avocado, bananas, Beet greens, Beetroot, Blackcurrants, Broccoli, citrus fruits, Coconut water, dried fruits, Elaneer (Coconut water), green leafy vegetables, Juices (e.g., carrot, pomegranate, prune, orange, and tomato), legumes such as peas and lima beans, Milk, Parsnip, Potatoes and sweet potatoes, potatoes (with skins), Spinach, Tomatoes and tomato products, Urulai kizhangu (Potatoes), Vazhaipazham (Banana), White beans, Wholegrain breakfast cereals, Yogurt",
+        "type": "Mineral",
+        "deficiency_symptoms": "and constipation, extreme fatigue, irregular heartbeat (palpitations), Severe muscle cramps (especially in the legs), weakness"
+    },
+    {
+        "Nutrient": "Selenium",
+        "whatitdoes": "A powerful antioxidant component of selenoproteins that protect cells from oxidative damage. Regulates thyroid hormone metabolism, supports robust immune function, and is crucial for DNA synthesis and male fertility.",
+        "foodsources": "Brazil nuts, Brown rice, cashews, eggs, Enriched pasta and rice, fish, Halibut, Kadugu (Mustard seeds), Meats, offal, poultry, Sardines, shellfish, sunflower seeds, Whole grains",
+        "type": "Mineral",
+        "deficiency_symptoms": "and increased risk of thyroid issues or heart disease, extreme fatigue, hair loss, mental fog, Muscle weakness, weakened immune system"
+    },
+    {
+        "Nutrient": "Sodium",
+        "whatitdoes": "Primary extracellular electrolyte crucial for regulating blood volume, blood pressure, and systemic fluid balance. Facilitates the transmission of nerve impulses and muscle contractions. Maintains acid-base balance.",
+        "foodsources": "added as salt (sodium chloride), Appalam (Papad), Breads and rolls, Cheese (natural and processed), Cold cuts and cured meats (e.g., deli or packaged ham or turkey), found naturally in foods, Mixed meat dishes (e.g., beef stew, chili, and meat loaf), Mixed pasta dishes (e.g., lasagna, pasta salad, and spaghetti with meat sauce), Mixture/Karam (Savory snacks), Oorugai (Indian pickles), Pickles, Pizza, Poultry (fresh and processed), Sandwiches (e.g., hamburgers, hot dogs, and submarine sandwiches), Savory snacks (e.g., chips, crackers, popcorn, and pretzels), Soups, Soy sauce, Table salt",
+        "type": "Mineral",
+        "deficiency_symptoms": "and in severe cases, confusion, fatigue, headache, Hyponatremia (low sodium, often triggered by extreme sweating). Symptoms include headache, muscle cramps, nausea, seizures"
+    },
+    {
+        "Nutrient": "Zinc",
+        "whatitdoes": "Catalyst for over 100 specific enzymes. Crucial for DNA/RNA synthesis, cell division, and rapid tissue growth (wound healing). Supports profound immune function, normal reproductive fertility, and sensory functions (taste and smell).",
+        "foodsources": "Beef, Cheese, Chickpeas, dairy products, dried beans, fortified breakfast cereals, Hemp seeds, milk, Mundhiri (Cashews), Nutra and seeds (e.g., pumpkin seeds and pine nuts), nuts, oysters, Poosani vidhai (Pumpkin seeds), poultry, red meat, Seafood (e.g., clams, crabs, lobsters, oysters), seafood, soy foods, Thuvaram paruppu (Pigeon peas), whole grains",
+        "type": "Mineral",
+        "deficiency_symptoms": "and stunted growth or development in children, delayed wound healing, diarrhea, frequent infections, noticeable loss of taste or smell, Unexplained hair loss"
+    }
+]

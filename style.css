@@ -1,0 +1,179 @@
+/* Base SEO & Accessibility Enhancements */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Rendering Performance (Core Web Vitals) */
+#nutrientGrid {
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px;
+}
+
+/* Accessibility: High-contrast focus state for SEO/A11y */
+:focus-visible {
+    outline: 2px solid #4f46e5 !important;
+    outline-offset: 4px !important;
+}
+
+/* Respect User Motion Preferences (UX Signal for SEO) */
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Glassmorphism Styles */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.85);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-color: rgba(99, 102, 241, 0.4);
+}
+
+.luminous-glass {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    box-shadow: 
+        0 25px 50px -12px rgba(139, 92, 246, 0.25),
+        inset 0 0 40px rgba(139, 92, 246, 0.05);
+}
+
+/* Background Decorations */
+.bg-blob {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    filter: blur(100px);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.15;
+    animation: move 20s infinite alternate cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+@keyframes move {
+    from { transform: translate(-10%, -10%) rotate(0deg); }
+    to { transform: translate(20%, 30%) rotate(360deg); }
+}
+
+.blob-1 { background: linear-gradient(135deg, #6366f1, #818cf8); top: -150px; left: -150px; }
+.blob-2 { background: linear-gradient(135deg, #f97316, #fb923c); bottom: -150px; right: -150px; animation-duration: 25s; }
+.blob-3 { background: linear-gradient(135deg, #3b82f6, #60a5fa); top: 40%; left: 30%; animation-duration: 18s; }
+
+.filter-btn {
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background: #4f46e5;
+    color: white;
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+    border-color: transparent;
+    transform: translateY(-2px);
+}
+
+/* Modal Animations and Highlighting */
+.modal-section-highlight {
+    animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) 2;
+}
+
+@keyframes pulse-ring {
+    0%, 100% { border-color: rgba(255, 255, 255, 0.4); box-shadow: none; }
+    50% { border-color: #6366f1; box-shadow: 0 0 20px rgba(99, 102, 241, 0.2); }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.action-link {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#modalBenefits > div, #modalSources > div, #modalSymptoms > div,
+#modalBenefits li, #modalSources li, #modalSymptoms li {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#modalBenefits li::marker {
+    content: counters(list-item, ".") " ";
+    color: #4f46e5;
+    font-weight: 800;
+}
+
+#modalSources li::marker {
+    content: "● ";
+    color: #818cf8;
+    font-size: 1.2em;
+}
+
+#modalSymptoms li::marker {
+    content: "▲ ";
+    color: #f43f5e;
+    font-size: 0.8em;
+}
+
+#modalBenefits li:hover, #modalSources li:hover, #modalSymptoms li:hover {
+    transform: scale(1.01);
+}
+
+/* Print Styles for SEO/UX Utility */
+@media print {
+    .bg-blob, #langToggle, .filter-btn, #searchInput, .glass-header, #paginationContainer {
+        display: none !important;
+    }
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    .glass-card {
+        break-inside: avoid;
+        border: 1px solid #eee !important;
+        background: white !important;
+        backdrop-filter: none !important;
+    }
+    main {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+}

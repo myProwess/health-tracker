@@ -1,0 +1,17 @@
+node_modules/
+.env
+.DS_Store
+dist/
+build/
+*.log
+.gemini/
+.agents/
+_agents/
+.agent/
+_agent/
+*.webp
+*.png
+*.jpg
+*.jpeg
+*.pdf
+tmp/
