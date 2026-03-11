@@ -59,7 +59,7 @@ To go live under 1 minute:
     - Click **Settings** > **Pages**.
     - Under "Build and deployment", set Source to **Deploy from a branch**.
     - Select **main** and folder **/(root)**. Click **Save**.
-3.  **Live Site**: Your app will be live at `https://your-username.github.io/health-tracker/`.
+3.  **Live Site**: Your app will be live at `https://myprowess.github.io/health-tracker/`.
 
 ### 🔍 Submit to Google Search Console
 1.  Verify your site ownership in [Google Search Console](https://search.google.com/search-console).
