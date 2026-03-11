@@ -20,6 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const langToggle = document.getElementById('langToggle');
     const langStatus = document.getElementById('langStatus');
 
+    // Dark Mode Elements
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const sunIcon = document.getElementById('sunIcon');
+    const moonIcon = document.getElementById('moonIcon');
+    const breadcrumbCurrent = document.getElementById('breadcrumbCurrent');
+
     let allNutrientsEn = [];
     let allNutrientsTa = [];
     let currentNutrients = [];
@@ -33,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             loading.classList.remove('hidden');
             const [enRes, taRes] = await Promise.all([
-                fetch('english.json'),
-                fetch('tamil.json')
+                fetch('data/english.json'),
+                fetch('data/tamil.json')
             ]);
             
             if (!enRes.ok || !taRes.ok) throw new Error('Data fetch failed');
@@ -70,14 +76,31 @@ document.addEventListener('DOMContentLoaded', () => {
         switchLanguage(!isTamil);
     });
 
+    // Dark Mode Logic
+    function toggleDarkMode(force) {
+        const isDark = force !== undefined ? force : !document.body.classList.contains('dark');
+        document.body.classList.toggle('dark', isDark);
+        sunIcon.classList.toggle('hidden', !isDark);
+        moonIcon.classList.toggle('hidden', isDark);
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    }
+
+    darkModeToggle.addEventListener('click', () => toggleDarkMode());
+
+    // Initialize Theme
+    if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        toggleDarkMode(true);
+    }
+
     function getNutrientName(n) {
         return n.Nutrient || n.Vitamins || "Unknown Nutrient";
     }
 
     function createNutrientCard(nutrient, index) {
         const typeStyles = nutrient.type === 'Vitamin' ? 'bg-orange-100 text-orange-700' : 'bg-blue-100 text-blue-700';
-        const card = document.createElement('div');
+        const card = document.createElement('article');
         card.className = 'glass-card rounded-[2.5rem] p-7 flex flex-col h-full animate-fade-in shadow-sm group';
+        card.setAttribute('aria-labelledby', `nutrient-name-${index}`);
         
         const actualIndex = (currentPage - 1) * itemsPerPage + index;
 
@@ -99,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${isTamil && nutrient.type === 'Vitamin' ? 'வைட்டமின்' : (isTamil ? 'தாது' : nutrient.type)}
                 </span>
             </div>
-            <h2 class="text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors mb-4 tracking-wide uppercase">${getNutrientName(nutrient)}</h2>
+            <h3 id="nutrient-name-${index}" class="text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors mb-4 tracking-wide uppercase">${getNutrientName(nutrient)}</h3>
             
             <div class="flex-grow">
                 <div class="mb-8">
@@ -109,12 +132,12 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
 
             <div class="pt-6 border-t border-slate-100/50 flex flex-wrap gap-4 mt-auto">
-                <button onclick="event.stopPropagation(); window.openModal(${actualIndex}, 'sources')" class="action-link text-[11px] font-bold text-indigo-600 uppercase tracking-wider flex items-center gap-1.5 hover:text-indigo-800 transition-colors">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.703 2.703 0 01-3 0 2.703 2.703 0 01-3 0 2.703 2.703 0 01-3 0 2.704 2.704 0 01-1.5-.454" /></svg>
+                <button onclick="event.stopPropagation(); window.openModal(${actualIndex}, 'sources')" class="action-link text-[11px] font-bold text-indigo-600 uppercase tracking-wider flex items-center gap-1.5 hover:text-indigo-800 transition-colors" aria-label="${foodSourcesLabel} for ${getNutrientName(nutrient)}">
+                    <svg class="w-3.5 h-3.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.703 2.703 0 01-3 0 2.703 2.703 0 01-3 0 2.703 2.703 0 01-3 0 2.704 2.704 0 01-1.5-.454" /></svg>
                     ${foodSourcesLabel}
                 </button>
-                <button onclick="event.stopPropagation(); window.openModal(${actualIndex}, 'symptoms')" class="action-link text-[11px] font-bold text-rose-600 uppercase tracking-wider flex items-center gap-1.5 hover:text-rose-800 transition-colors">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                <button onclick="event.stopPropagation(); window.openModal(${actualIndex}, 'symptoms')" class="action-link text-[11px] font-bold text-rose-600 uppercase tracking-wider flex items-center gap-1.5 hover:text-rose-800 transition-colors" aria-label="${symptomsLabel} for ${getNutrientName(nutrient)}">
+                    <svg class="w-3.5 h-3.5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
                     ${symptomsLabel}
                 </button>
             </div>
@@ -234,6 +257,12 @@ document.addEventListener('DOMContentLoaded', () => {
         nutrientModal.classList.add('flex');
         document.body.style.overflow = 'hidden';
         document.querySelector('.overflow-y-auto').scrollTop = 0;
+        
+        // Focus management
+        setTimeout(() => {
+            const innerModal = nutrientModal.querySelector('.luminous-glass');
+            innerModal.focus();
+        }, 100);
     }
 
     function closeModalHandler() {
@@ -295,6 +324,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const match = [name, n.whatitdoes, n.foodsources, n.deficiency_symptoms].some(f => (f||"").toLowerCase().includes(query));
             return match && (currentFilter === 'All' || n.type === currentFilter);
         });
+        
+        // Update Breadcrumb
+        const filterTa = { 'All': 'அனைத்தும்', 'Vitamin': 'வைட்டமின்கள்', 'Mineral': 'தாதுக்கள்' };
+        breadcrumbCurrent.innerText = isTamil ? filterTa[currentFilter] : currentFilter;
+
         currentPage = 1;
         displayNutrients();
     }
